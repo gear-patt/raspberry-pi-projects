@@ -10,7 +10,6 @@ conn, addr = my_socket.accept()
 print('Got a request')
 
 while True:
-    print('new loop')
     data = conn.recv(1000)
     if data == b'on\n':
         GPIO.output(8, True)
