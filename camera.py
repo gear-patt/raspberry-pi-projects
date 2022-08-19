@@ -1,3 +1,4 @@
 import picamera
 camera = picamera.PiCamera()
-camera.capture('test.jpg')
+camera.rotation = 180
+camera.capture('test.png')
